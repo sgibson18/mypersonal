@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 WORKDIR /usr/src/app
+ENV DEBIAN_FRONTEND=noninteractive
 RUN chmod 777 /usr/src/app
 
 RUN apt-get -qq update
